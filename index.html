@@ -59,6 +59,7 @@
     text-align: center;
     margin-bottom: 16px;
     background: linear-gradient(135deg, #ff3c5f, #ff8c00, #ffd600);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -546,17 +547,17 @@
     <div class="game-card" onclick="openGame(1)">
       <div class="card-num">01</div>
       <div class="card-title">Quentin vs Guillaume</div>
-      <div class="card-desc">Quentin doit survivre dans les rues de Montpellier. Guillaume le traque sans relâche. Esquivez. Durez. Gagnez.</div>
+      <div class="card-desc">Quentin doit tout faire pour éviter d'être approché par le danger qu'est Guillaume.</div>
     </div>
     <div class="game-card" onclick="openGame(2)">
       <div class="card-num">02</div>
-      <div class="card-title">Vue Imprenable</div>
-      <div class="card-desc">Des spectacles se déroulent sur le lit. Placez votre chaise à l'endroit optimal pour profiter au maximum.</div>
+      <div class="card-title">La Cuck Chair</div>
+      <div class="card-desc">Des acrobaties se déroulent sur le lit. Placez votre cuck chair à l'endroit optimal pour profiter au maximum.</div>
     </div>
     <div class="game-card" onclick="openGame(3)">
       <div class="card-num">03</div>
-      <div class="card-title">Le Tube</div>
-      <div class="card-desc">Un trou. Un tube. Alignez-les parfaitement. Simple en apparence. Diabolique en pratique.</div>
+      <div class="card-title">La Belt Party</div>
+      <div class="card-desc">Essaye de placer au mieux le gode ceinture dans le trou du cul car tu es ouvert d'esprit.</div>
     </div>
     <div class="game-card" onclick="openGame(4)">
       <div class="card-num">04</div>
@@ -583,7 +584,7 @@
 <div class="game-screen" id="screen2">
   <div class="game-header">
     <button class="back-btn" onclick="closeGame(2)">← RETOUR</button>
-    <h2 style="color:var(--accent2)">VUE IMPRENABLE</h2>
+    <h2 style="color:var(--accent2)">LA CUCK CHAIR</h2>
     <div class="game-info score-tag">SCORE: <span id="g2-score-val">0</span></div>
     
   </div>
@@ -596,7 +597,7 @@
 <div class="game-screen" id="screen3">
   <div class="game-header">
     <button class="back-btn" onclick="closeGame(3)">← RETOUR</button>
-    <h2 style="color:var(--accent3)">LE TUBE</h2>
+    <h2 style="color:var(--accent3)">LA BELT PARTY</h2>
     <div class="game-info score-tag">SCORE: <span id="g3-score-val">0</span></div>
   </div>
   <div class="game-canvas-area" id="game3-area">
@@ -989,7 +990,7 @@ function showG1Overlay(ctx, title, sub, btnLabel, callback) {
 }
 
 // ==============================
-// GAME 2 - VUE IMPRENABLE
+// GAME 2 - LA CUCK CHAIR
 // ==============================
 let g2State;
 
@@ -1259,7 +1260,7 @@ function drawGame2(ctx) {
     ctx.font = '12px "Space Mono"';
     ctx.fillStyle = '#00e5ff';
     ctx.textAlign = 'center';
-    ctx.fillText('VALIDER LA POSITION', 350, 441);
+    ctx.fillText('PLACER LA CUCK CHAIR', 350, 441);
     ctx.textAlign = 'left';
 
     ctx.font = '11px "Space Mono"';
@@ -1271,7 +1272,7 @@ function drawGame2(ctx) {
 }
 
 // ==============================
-// GAME 3 - LE TUBE
+// GAME 3 - LA BELT PARTY
 // ==============================
 // PNG tube image — preloaded from embedded base64
 let g3TubeImg = new Image();
